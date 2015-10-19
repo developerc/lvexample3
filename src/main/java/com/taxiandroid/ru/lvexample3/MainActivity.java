@@ -30,17 +30,17 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-
+        view.setSelected(true);
+            User itemLV = (User) parent.getItemAtPosition(position);
+            String itemName = itemLV.name;
+            Toast.makeText(getApplicationContext(),
+                    "Вы выбрали " + itemName, Toast.LENGTH_SHORT).show();
 
         }
 
 
         public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-            User itemLV = (User) parent.getItemAtPosition(position);
-            String itemName = itemLV.name;
-            Toast.makeText(getApplicationContext(),
-                    "Вы выбрали " + itemName, Toast.LENGTH_SHORT).show();
+
         }
 
 
