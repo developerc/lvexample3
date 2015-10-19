@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LVExample3</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Очистить</string>
+    <string name="action_insert">Вставить</string>
+    <string name="action_populating">Populating</string>
+</resources>
